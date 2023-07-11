@@ -1,0 +1,155 @@
+h2, p, span {
+    -webkit-text-stroke: 0.1px rgb(26, 26, 26);
+}
+
+.about-title {
+    h2 {
+        font-size: 40px;
+        color: #ffffff;
+    }
+    span, p {
+        margin: 0;
+    }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.developer {
+    p{
+        margin-right: 5px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    position: relative;
+    max-width: 600px;
+    width: 80%;
+    word-break: keep-all;
+}
+
+.mosnter {
+    bottom: -150px;
+    right: -80px;
+    width: 300px;
+    height: auto;
+    position: absolute;
+}
+
+.stack {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.stack-container {
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    p {
+        display: flex;
+        align-items: center;
+    }
+    width: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+@mixin circles($color, $width){
+    width: $width;
+    height: $width;
+    margin-left: 10px;
+    border-radius: 100%;
+    background-color: $color;
+    opacity: 40%;
+}
+
+.good {
+    @include circles(rgb(1, 255, 1), 10px);
+}
+
+.soso {
+    @include circles(rgb(255, 230, 1), 10px);
+}
+
+.bad {
+    @include circles(rgb(255, 1, 1), 10px);
+}
+
+.circle-desc {
+    width: 8px;
+    height: 8px;
+    margin-right: 20px;
+}
+
+.difficulty {
+    div {
+        margin-right: 5px;
+        margin-bottom: 3px;
+        display: flex;
+        align-items: center;
+    }
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stack-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.stack-item {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width : 768px) {
+    .mosnter {
+        bottom: -280px;
+        right: -40px;
+    }
+    .difficulty {
+        margin-bottom: 50px;
+    }
+    .stack {
+        margin-top: 300px;
+    }
+    .stack-container {
+        text-align: center;
+    }
+    .stack-item-container {
+        width: 60%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .stack-item {
+        width: 80%;
+    }
+}

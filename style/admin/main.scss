@@ -1,0 +1,83 @@
+div {
+    box-sizing: border-box;
+}
+
+.admin-title {
+    h2 {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    p {
+        margin: 0;
+    }
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.uploader-container {
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.uploader {
+    h2 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    background-color: rgb(29, 29, 29);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 43%;
+}
+
+.new-admin {
+    color: white;
+    text-align: center;
+}
+
+.new-admin-title {
+    h2 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    background-color: rgb(29, 29, 29);
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .uploader-container {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .uploader  {
+        margin-bottom: 20px;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .new-admin-title {
+        width: 97%;
+    }
+}

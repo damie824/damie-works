@@ -1,0 +1,47 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-text-stroke: 0.1px rgb(26, 26, 26);
+}
+
+.login-title {
+    h1 {
+        margin: 0;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 0;
+    }
+    margin-bottom: 30px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialBtn {
+    svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0px 20px;
+}

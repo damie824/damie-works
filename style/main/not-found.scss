@@ -1,0 +1,16 @@
+.not-found {
+    h2 {
+        font-size: 40px;
+        margin: 10px;
+    }
+    a {
+        color: rgb(90, 90, 255);
+        text-decoration: none;
+    }
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}

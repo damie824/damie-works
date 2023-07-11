@@ -1,0 +1,85 @@
+#register-main {
+    h2 {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+    p {
+        margin: 0;
+    }
+    input {
+        &:focus {
+            outline: none;
+        }
+        margin-top: 10px;
+        width: 250px;
+        background-color: transparent;
+        border: 0;
+        padding: 10px 15px;
+        border-bottom: 2px solid white;
+        color: white;
+    }
+    button {
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+        width: 270px;
+        margin-top: 40px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 50px;
+        color: white;
+        font-family: 'RixInooAriDuriR';
+        cursor: pointer;
+    }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.incorrect {
+    font-size: 10px;
+    color: rgb(255, 67, 67);
+    display: none;
+}
+
+.register-form-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#done {
+    svg {
+        width: 120px;
+    }
+    h2 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        color: rgb(103, 156, 255);
+    }
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

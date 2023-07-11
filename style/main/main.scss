@@ -1,0 +1,55 @@
+.lab-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: blur(0.5px);
+}
+
+.title {
+    h1 {
+        color: #57e6ff;
+        -webkit-text-stroke: 2px rgb(26, 26, 26);
+        text-shadow: 5px 5px #BC40F6;
+        margin: 0;
+        font-size: 60px;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.main-lists {
+    a {
+        &:hover {
+            &::after{
+                content: "  <";
+            }
+            right: -3px;
+            bottom: -3px;
+            text-shadow: 1px 1px #e7e7e7;
+            
+        }
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px; 
+        -webkit-text-stroke: 1px rgb(26, 26, 26);
+        transition: all 300ms ease-in-out;
+        text-shadow: 3px 3px #e7e7e7;
+    }
+    width: 110px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}

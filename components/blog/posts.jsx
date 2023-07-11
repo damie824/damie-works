@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 function Post(props) {
     return(
         <Link href='/' className="blog-post">

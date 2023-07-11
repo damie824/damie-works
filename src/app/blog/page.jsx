@@ -29,6 +29,7 @@ export default async function BlogMain() {
                             thumbnail = {a.thumbnail}
                             emoji = {a.emoji}
                             desc = {a.content.substr(0, 10) + ".."}
+                            key = {i}
                         />
                     )
                 })}

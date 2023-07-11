@@ -3,7 +3,7 @@ import "@/style/blog/preview.scss"
 
 export default function PostPreview(props) {
     return(
-        <Link className="preview-body" href={'/blog/post/'+props.id}>
+        <Link key={props.key} className="preview-body" href={'/blog/post/'+props.id}>
             <p className="preview-emoji">
                 {props.emoji}
             </p>

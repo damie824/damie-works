@@ -1,0 +1,15 @@
+.new-key {
+    input {
+        width: 250px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}

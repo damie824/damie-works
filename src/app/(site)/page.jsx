@@ -13,7 +13,7 @@ export default function Home() {
             <Link href='/about'>About</Link>
             <Link href='/works'>Works</Link>
             <Link href='/blog'>Blog</Link>
-            <Link href='/contact'>Contact</Link>
+            <Link href='https://discord.gg/SzHMcMAwm6'>Contact</Link>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: "Damie.Works",
+  title: "다미 - 학생과 개발자 사이",
   description : "학생과 개발자 사이, 다미의 포트폴리오 사이트입니다.",
   robots : "index, follow",
   viewport : "width=device-width, initial-scale=1.0",

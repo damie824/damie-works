@@ -1,5 +1,4 @@
-'use client'
-
+import ContactForm from "@/components/contact/form";
 import Footer from "@/components/global/footer";
 import "@/style/main/contact.scss"
 
@@ -8,32 +7,13 @@ export default function Contact() {
     return(
         <main>
             <div className="contact main">
-                <div className="contact-body">
+                <div className="contact-body" id='form'>
                     <h1>Contact Me!</h1>
                     <div className="divider"></div>
-                    <form onSubmit={(e)=>{
-                        e.preventDefault();
-                        fetch("/api/contact/send", {
-                            method : "POST",
-                            body : JSON.stringify({
-                                title : e.target.title.value,
-                                username : e.target.username.value,
-                                email : e.target.email.value,
-                                content : e.target.content.value
-                            })
-                        })
-                    }} className="contact-form">
-                        <div className="contact-title">
-                            <input name="username" type="text" placeholder="이름을 입력해 주세요!" required/>
-                            <input name="email" type="email" placeholder="이메일 입력해 주세요!" required/>
-                        </div>
-                        <input name="title" placeholder="제목을 입력해주세요!" required/>
-                        <textarea name="content" placeholder="문의하실 내용을 입력해주세요!" required/>
-                        <button type="submit">전송</button>
-                    </form>
+                    <ContactForm/>
                     <Footer/>
                 </div>
-                <div className="contact-done">
+                <div className="contact-done" id='done'>
                     <h2>성공적으로 전송했어요!</h2>
                     <p>빠른 시일 내 이메일로 답변해 드릴게요 :)</p>
                     <Footer/>

@@ -47,7 +47,7 @@ export const metadata = {
     robots : "index, follow",
     viewport : "width=device-width, initial-scale=1.0",
     charset : "utf-8",
-    keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JaavaScript",
+    keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JavaScript",
     author : "Damie",
     openGraph: {
         images:"https://imagedelivery.net/VdOi7nfD9mMJsHNS4Vve_A/95b85980-5916-44c0-e941-5963aa553100/public",

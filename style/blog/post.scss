@@ -1,10 +1,36 @@
-.post-title h1 {
-    -webkit-text-stroke: 0.1px rgb(26, 26, 26);
+.post-title {
+    h1 {
+        -webkit-text-stroke: 0.1px rgb(26, 26, 26);
+    }
+    button {
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+        svg {
+            margin-left: 5px;
+            width: 15px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        font-family: 'RixInooAriDuriR';
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .blog-viewer {
     width: 80%;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     color: white;
 }

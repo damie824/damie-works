@@ -85,7 +85,7 @@ export async function generateMetadata({ params }) {
         robots : "index, follow",
         viewport : "width=device-width, initial-scale=1.0",
         charset : "utf-8",
-        keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JaavaScript",
+        keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JavaScript",
         author : "Damie",
         openGraph: {
             images: [thisWork ? thisWork.thumbnail : "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.trendcentral.com%2Fwp-content%2Fuploads%2F2021%2F04%2Fnever-gonna-give-you-up.jpg&f=1&nofb=1&ipt=824eaae6faeed063a35c398783acee390bdee56e8cf6d476d5d3e92fb7dedbfb&ipo=images"],

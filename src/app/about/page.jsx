@@ -58,22 +58,22 @@ export default function About(){
                                 <div className="stack-item">Javascript <div className="good"></div></div>
                                 <div className="stack-item">Typescript <div className="good"></div></div>
                                 <div className="stack-item">HTML / CSS <div className="good"></div></div>
-                                <div className="stack-item">Dart <div className="soso"></div></div>
                                 <div className="stack-item">React.js <div className="good"></div></div>
                                 <div className="stack-item">Redux <div className="good"></div></div>
                                 <div className="stack-item">Next.js <div className="good"></div></div>
-                                <div className="stack-item">Sveltkit <div className="soso"></div></div>
                                 <div className="stack-item">React Native <div className="good"></div></div>
+                                <div className="stack-item">Dart <div className="soso"></div></div>
+                                <div className="stack-item">Sveltkit <div className="soso"></div></div>
                             </div>
                             <h2>Back-End</h2>
                             <div className="stack-item-container">
                                 <div className="stack-item">Python <div className="good"></div></div>
-                                <div className="stack-item">Go <div className="bad"></div></div>
-                                <div className="stack-item">C <div className="bad"></div></div>
                                 <div className="stack-item">MySQL <div className="good"></div></div>
                                 <div className="stack-item">Prisma <div className="good"></div></div>
                                 <div className="stack-item">Flask <div className="good"></div></div>
-                                <div className="stack-item">Express.js <div className="soso"></div></div>
+                                <div className="stack-item">Express.js <div className="good"></div></div>
+                                <div className="stack-item">Go <div className="bad"></div></div>
+                                <div className="stack-item">C <div className="bad"></div></div>
                             </div>
                             <h2>Collaboration</h2>
                             <div className="stack-item-container">
@@ -96,7 +96,7 @@ export const metadata = {
     robots : "index, follow",
     viewport : "width=device-width, initial-scale=1.0",
     charset : "utf-8",
-    keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JaavaScript",
+    keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JavaScript",
     author : "Damie",
     openGraph: {
         images:"https://imagedelivery.net/VdOi7nfD9mMJsHNS4Vve_A/ae01474e-19e8-44d7-3447-2a4117ca6200/public",

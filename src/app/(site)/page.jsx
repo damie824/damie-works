@@ -13,7 +13,7 @@ export default function Home() {
             <Link href='/about'>About</Link>
             <Link href='/works'>Works</Link>
             <Link href='/blog'>Blog</Link>
-            <Link href='https://discord.gg/SzHMcMAwm6'>Contact</Link>
+            <Link href='/contact'>Contact</Link>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ export const metadata = {
   robots : "index, follow",
   viewport : "width=device-width, initial-scale=1.0",
   charset : "utf-8",
-  keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JaavaScript",
+  keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JavaScript",
   author : "Damie",
   openGraph: {
       images:"https://imagedelivery.net/VdOi7nfD9mMJsHNS4Vve_A/36b7ce13-4f3b-48c9-1469-ec1319f11f00/public",

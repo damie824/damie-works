@@ -27,11 +27,12 @@ model Posts {
     title       String
     date        String
     emoji       String
+    like        Int       @default(0)
     thumbnail   String
     hashtags    String    @default("")
-    content     String
+    content     String    @db.LongText
 
-    @@fulltext([title, hashtags, content])
+    @@fulltext([title, hashtags])
 }
 model User {
     id          String    @id @default(uuid())

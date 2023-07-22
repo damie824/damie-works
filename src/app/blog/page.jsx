@@ -40,15 +40,15 @@ export default async function BlogMain() {
 
 export const metadata = {
     title: "Blog - Damie",
-    description : "저의 기술 블로그 페이지에요! 풀스택 개발자인 저의 재밌는 상상들을 담았아요 :)",
+    description : "저의 기술 블로그 페이지에요! 저의 재밌는 상상들을 담았아요 :)",
     robots : "index, follow",
     viewport : "width=device-width, initial-scale=1.0",
     charset : "utf-8",
-    keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JaavaScript",
+    keywords : "프론트엔드, 자바스크립트, 타입스크립트, 포트폴리오, 개발자, HTML, CSS, JavaScript",
     author : "Damie",
     openGraph: {
         images:"https://imagedelivery.net/VdOi7nfD9mMJsHNS4Vve_A/94f118b7-9acd-4341-46d8-c0ba1724dd00/public",
         title : "Blog - Damie",
-        description : "저의 기술 블로그 페이지에요! 풀스택 개발자인 저의 재밌는 상상들을 담았아요 :)"
+        description : "저의 기술 블로그 페이지에요! 저의 재밌는 상상들을 담았아요 :)"
     },
 }

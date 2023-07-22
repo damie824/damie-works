@@ -63,9 +63,14 @@ export default async function BlogMain(props) {
 
 export async function generateMetadata({ params }) {
 
-    const query = params.query
+    let db = prismaDB;
 
-    title = "Search Result Of " + query;
+    let decodeStr = decodeURI(params.query);
+
+    let query = decodeStr.replace(" ", " | ");
+
+    const title = "Search Result Of " + query;
+
 
     return {
         title: title,
@@ -76,7 +81,6 @@ export async function generateMetadata({ params }) {
         author : "Damie",
         openGraph: {
             title : title,
-            description : thisWork.content.substring(0, 20) + ".."
         },
     }
 }

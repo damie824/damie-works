@@ -1,13 +1,17 @@
 'use client'
 
-import "@/style/admin/new-key.scss"
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-export default async function NewKey() {
-    const [key, setKey] = useState();
-    
+export default function GeneratKey(props) {
+    const [key, setKey] = useState("");
+
     useEffect(()=>{
-        fetch('/api/admin/generate-key')
+        fetch('/api/admin/generate-key', {
+            method: 'POST',
+            headers : {
+                apikey : props.api
+            }
+        })
         .then((r)=>{
             if(r.ok) {
                 return r.json()
@@ -22,7 +26,7 @@ export default async function NewKey() {
         <main>
             <div className="main new-key">
                 <h2>Your New Key Is..</h2>
-                <input value={key}/>
+                <input value={key} disabled/>
             </div>
         </main>
     )

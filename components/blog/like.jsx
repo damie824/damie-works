@@ -8,6 +8,9 @@ export default function LikeButton(props) {
     function clickLike() {
         fetch("/api/blog/like", {
             method: 'POST',
+            headers : {
+                apikey : props.apikey
+            },
             body: JSON.stringify({
                 id : props.id
             })

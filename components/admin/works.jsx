@@ -3,7 +3,7 @@
 import '@/style/admin/upload.scss'
 import { useRouter } from 'next/navigation';
 
-export default function PostUpload() {
+export default function WorkUpload(props) {
 
     let router = useRouter();
 
@@ -22,6 +22,9 @@ export default function PostUpload() {
 
         fetch("/api/admin/new-work", {
             method : "POST",
+            headers : {
+                apikey : props.apikey
+            },
             body : JSON.stringify({
                 title : title,
                 uploadDate : uploadDate,

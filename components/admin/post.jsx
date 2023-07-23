@@ -6,7 +6,7 @@ import '@toast-ui/editor/dist/toastui-editor.css';
 import '@/style/admin/upload.scss'
 
 const DynamicEditor = dynamic(() => import("@/components/admin/editor"), {ssr : false});
-export default function PostUpload() {
+export default function PostUpload(props) {
     const [contents, setContents] = useState("");
 
     function OnSubmit() {
@@ -27,6 +27,9 @@ export default function PostUpload() {
 
         fetch("/api/admin/new-post", {
             method : "POST",
+            headers : {
+                apikey : props.apikey
+            },
             body : JSON.stringify({
                 title : title,
                 date : nowDate,

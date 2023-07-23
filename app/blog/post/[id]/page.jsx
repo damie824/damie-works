@@ -36,7 +36,7 @@ export default async function BlogPost(props) {
             <div className="post-info">
                 <div className="post-title">
                     <h1>{post.title}</h1>
-                    <LikeButton like={post.like} id={post.id}/>
+                    <LikeButton apikey={process.env.APISECRET} like={post.like} id={post.id}/>
                 </div>
                 <div className="post-etc">
                     <div className="hashtag-container">

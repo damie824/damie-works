@@ -10,7 +10,7 @@ export default function Contact() {
                 <div className="contact-body" id='form'>
                     <h1>Contact Me!</h1>
                     <div className="divider"></div>
-                    <ContactForm/>
+                    <ContactForm apikey={process.env.APISECRET}/>
                     <Footer/>
                 </div>
                 <div className="contact-done" id='done'>

@@ -1,11 +1,14 @@
 'use client'
 
-export default function ContactForm() {
+export default function ContactForm(props) {
     return (
         <form onSubmit={(e)=>{
             e.preventDefault();
             fetch("/api/contact/send", {
                 method : "POST",
+                headers : {
+                    apikey : props.apikey
+                },
                 body : JSON.stringify({
                     title : e.target.title.value,
                     username : e.target.username.value,
@@ -21,7 +24,7 @@ export default function ContactForm() {
         }} className="contact-form">
             <div className="contact-title">
                 <input name="username" type="text" placeholder="이름을 입력해 주세요!" required/>
-                <input name="email" type="email" placeholder="이메일 입력해 주세요!" required/>
+                <input name="email" type="email" placeholder="이메일을 입력해 주세요!" required/>
             </div>
             <input name="title" placeholder="제목을 입력해주세요!" required/>
             <textarea name="content" placeholder="문의하실 내용을 입력해주세요!" required/>

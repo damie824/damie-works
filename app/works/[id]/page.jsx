@@ -1,7 +1,7 @@
 import { prismaDB } from "@/util/prisma"
 import Footer from "@/components/global/footer"
 import "@/style/main/works.scss"
-import NotFound from "@/src/app/not-found";
+import NotFound from "@/app/not-found";
 import Link from "next/link";
 import UseComment from "@/components/blog/comments";
 

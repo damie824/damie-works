@@ -11,7 +11,7 @@ export default function ContactForm(props) {
                 },
                 body : JSON.stringify({
                     title : e.target.title.value,
-                    username : e.target.username.value,
+                    username : e.target.username.valaue,
                     email : e.target.email.value,
                     content : e.target.content.value
                 })

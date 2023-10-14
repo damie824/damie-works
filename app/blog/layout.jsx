@@ -4,11 +4,11 @@ import Footer from "@/components/global/footer";
 export default function RootLayout({ children }) {
   return (
     <main>
-      <div className="main blog-main">
-        <BlogHeader/>
+      <div className='main blog-main'>
+        <BlogHeader />
         {children}
-        <Footer/>
+        <Footer />
       </div>
     </main>
-  )
+  );
 }
